@@ -1,0 +1,29 @@
+kind: Subgraph
+version: v2
+definition:
+  name: app
+  generator:
+    rootPath: .
+    namingConvention: none
+  includePaths:
+    - metadata
+  envMapping:
+    APP_MY_PG_AUTHORIZATION_HEADER:
+      fromEnv: APP_MY_PG_AUTHORIZATION_HEADER
+    APP_MY_PG_READ_URL:
+      fromEnv: APP_MY_PG_READ_URL
+    APP_MY_PG_WRITE_URL:
+      fromEnv: APP_MY_PG_WRITE_URL
+    APP_POSTGRES_AUTHORIZATION_HEADER:
+      fromEnv: APP_POSTGRES_AUTHORIZATION_HEADER
+    APP_POSTGRES_READ_URL:
+      fromEnv: APP_POSTGRES_READ_URL
+    APP_POSTGRES_WRITE_URL:
+      fromEnv: APP_POSTGRES_WRITE_URL
+    POSTGRESQL_JDBC_URL:
+      fromEnv: POSTGRESQL_JDBC_URL
+  connectors:
+    - path: connector/postgres/connector.yaml
+      connectorLinkName: postgres
+    - path: connector/my_pg/connector.yaml
+      connectorLinkName: my_pg

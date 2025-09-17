@@ -1,0 +1,20 @@
+APP_MY_PG_AUTHORIZATION_HEADER="Bearer 4dR1U9BUvzK_2mkxAQYP_A=="
+APP_MY_PG_HASURA_CONNECTOR_PORT=7789
+APP_MY_PG_HASURA_SERVICE_TOKEN_SECRET="4dR1U9BUvzK_2mkxAQYP_A=="
+APP_MY_PG_OTEL_EXPORTER_OTLP_ENDPOINT="http://local.hasura.dev:4317"
+APP_MY_PG_OTEL_SERVICE_NAME="app_my_pg"
+APP_MY_PG_READ_URL="http://local.hasura.dev:7789"
+APP_MY_PG_WRITE_URL="http://local.hasura.dev:7789"
+APP_POSTGRES_AUTHORIZATION_HEADER="Bearer Gj1qrVexVf-_HFR3lHrWZw=="
+APP_POSTGRES_CONNECTION_URI="postgresql://postgres:postgrespassword@local.hasura.dev:6432/apple_health"
+APP_POSTGRES_HASURA_SERVICE_TOKEN_SECRET="Gj1qrVexVf-_HFR3lHrWZw=="
+APP_POSTGRES_OTEL_EXPORTER_OTLP_ENDPOINT="http://local.hasura.dev:4317"
+APP_POSTGRES_OTEL_SERVICE_NAME="app_postgres"
+APP_POSTGRES_READ_URL="http://local.hasura.dev:6109"
+APP_POSTGRES_WRITE_URL="http://local.hasura.dev:6109"
+HASURA_DDN_PAT="JIay7lFKeUiyBvkVPLAApOdzYPQyQWCc8tpea9VSIMMTQiRradztKQp9YzWQxNZr"
+PROMPTQL_SECRET_KEY="d68bb4c2-72ae-4649-825a-fd6577d79c19"
+JDBC_URL="jdbc:postgresql://localhost:5432/apple_health"
+
+
+

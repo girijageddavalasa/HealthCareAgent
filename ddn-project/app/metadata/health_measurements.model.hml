@@ -1,0 +1,9 @@
+kind: Model
+version: v2
+definition:
+  name: health_measurements
+  objectType: health_measurements
+  description: Apple Watch health measurements table.
+  source:
+    dataConnectorName: postgres
+    collection: health_measurements

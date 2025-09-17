@@ -1,0 +1,14 @@
+kind: DataConnectorLink
+version: v0.2
+definition:
+  name: my_pg
+  url:
+    readWriteUrls:
+      read:
+        valueFromEnv: POSTGRESQL_JDBC_URL
+      write:
+        valueFromEnv: POSTGRESQL_JDBC_URL
+  schema:
+    version: v1
+    schema: {}
+    capabilities: {}

@@ -1,0 +1,17 @@
+kind: ObjectType
+version: v1
+definition:
+  name: health_measurements
+  fields:
+    - name: type
+      type: String
+    - name: unit
+      type: String
+    - name: creation_date
+      type: String
+    - name: start_date
+      type: String
+    - name: end_date
+      type: String
+    - name: value
+      type: Float

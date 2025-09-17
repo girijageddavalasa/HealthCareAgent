@@ -1,0 +1,6 @@
+# ddn-project/girija_supergraph.yaml
+name: girija_apple_health_supergraph
+version: 1
+subgraphs:
+  - name: girija_health_data_subgraph
+    routing_url: http://hasura:8080/v1/graphql

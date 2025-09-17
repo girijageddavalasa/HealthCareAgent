@@ -1,0 +1,33 @@
+version: '3.9'
+
+services:
+  girija_postgres:
+    image: postgres:15
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: postgrespassword
+      POSTGRES_USER: postgres
+      POSTGRES_DB: apple_health
+    volumes:
+      - girija_postgres_data:/var/lib/postgresql/data
+      - C:\Users\dharm\OneDrive\Desktop\GIRIJA DL\Interv\final14\AppleWatch.csv:/AppleWatch.csv
+    ports:
+      - "5432:5432"
+
+  girija_hasura:
+    image: hasura/graphql-engine:v2.27.0
+    depends_on:
+      - girija_postgres
+    ports:
+      - "8081:8080"
+    restart: always
+    environment:
+      HASURA_GRAPHQL_DATABASE_URL: postgresql://postgres:postgrespassword@girija_postgres:5432/apple_health
+      HASURA_GRAPHQL_ENABLE_CONSOLE: "true"
+      HASURA_GRAPHQL_ADMIN_SECRET: myadminsecretkey
+    command:
+      - graphql-engine
+      - serve
+
+volumes:
+  girija_postgres_data:

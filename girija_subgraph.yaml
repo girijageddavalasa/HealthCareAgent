@@ -1,0 +1,11 @@
+# ddn-project/app/girija_subgraph.yaml
+name: girija_health_data_subgraph
+version: 1
+service:
+  endpoint:
+    url: http://hasura:8080/v1/graphql
+  schema:
+    path: girija_schema.graphql
+metadata:
+  source: postgres
+  database_url: ${DATABASE_URL}
